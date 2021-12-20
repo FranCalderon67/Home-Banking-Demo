@@ -36,6 +36,14 @@ btnCalcularDolarCompra.click(function (e) {
 //Boton de aceptar la compra.
 btnAceptarCompra.addEventListener("click", function (e) {
   e.preventDefault();
+
+  compraUsuario = $("#comprar-dolar")
+    .keyup(function () {
+      let value = $(this).val();
+      $(".total-operacion-compra").text("Total" + " " + "$" + value * valorVenta);
+    })
+    .keyup();
+
   cuentaActual.cuentaExt.push(Number(compraUsuario.val()));
   cuentaActual.movimientos.push(Number(compraUsuario.val() * valorVenta * -1));
   //Funciones para actualizar la UI
@@ -47,7 +55,7 @@ btnAceptarCompra.addEventListener("click", function (e) {
 
 let ventaUsuario;
 //Funcion de evento del boton calcular dentro del modal
-//de venta dolar. Muestra el total de pesos para cambiar
+//de venta dolar. Muestra el total de dolares para cambiar
 btnCalcularDolarVenta.click(function (e) {
   e.preventDefault();
 
@@ -61,6 +69,14 @@ btnCalcularDolarVenta.click(function (e) {
 //Boton de aceptar la venta.
 btnAceptarVenta.click(function (e) {
   e.preventDefault();
+
+  ventaUsuario = $("#vender-dolar")
+    .keyup(function () {
+      let value = $(this).val();
+      $(".total-operacion-venta").text("Total" + " " + "$" + value * valorCompra);
+    })
+    .keyup();
+
   cuentaActual.cuentaExt.push(Number(ventaUsuario.val() * -1));
   cuentaActual.movimientos.push(Number(ventaUsuario.val() * valorCompra));
   //Funciones para actualizar la UI
