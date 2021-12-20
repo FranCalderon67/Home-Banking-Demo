@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*font-family: "Montserrat", sans-serif;*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+input {
+  margin: 1rem 0 0 0;
+}
+
+.header-img {
+  height: 100px;
+  margin: 0 0 0 4rem;
+}
+
+.header-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin: 0 0 0 2rem;
+}
+
+.cardTransferencia {
+  margin: 3% 0 0 35%;
+}
+
+.cardTransferencia-header {
+  margin: 5% 25% 0 30%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  color: blue;
+  font-weight: 700;
+}
+
+.logoCardTransferencia {
+  width: 50%;
+  margin: 0 25% 0 25%;
+}
+
+.descargarComprobante {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: blue;
+  z-index: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+#ingreso {
+  display: flex;
+  z-index: 1;
+}
+.form-ingreso {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin: 7rem 0 0 0;
+  width: 100%;
+}
+
+.form-ingreso-titulo {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0 2rem 0;
+}
+
+.form-ingreso-usuario {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0 2rem 0;
+  border: unset;
+  border-bottom: solid 2px blue;
+  outline: none;
+}
+
+.form-ingreso-pin {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0 2rem 0;
+  border: unset;
+  border-bottom: solid 2px blue;
+  outline: none;
+}
+
+.form-ingreso-boton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: blue;
+  z-index: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+.form-ingreso-boton:hover:after {
+  width: 100%;
+  left: 0;
+}
+.form-ingreso-boton:after {
+  border-radius: 5px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #3a86ff;
+  right: 0;
+}
+.form-ingreso-boton:active {
+  top: 2px;
+}
+
+#cuentas {
+  display: none;
+  z-index: 0;
+  margin: 2rem 1rem 0 0;
+}
+
+#menu {
+  display: none;
+  z-index: -1;
+}
+
+.menu-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu-lista-boton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border: none;
+  background: none;
+  margin: 2rem 0 2rem 0.5rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.menu-lista-boton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cuenta-flex {
+  display: flex;
+
+  text-align: center;
+  align-items: center;
+  margin: 3rem 0 0 0;
+  width: 100%;
+}
+
+.movimientos {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.saldo {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#prestamo {
+  display: none;
+  z-index: -1;
+  grid-area: datos;
+  margin: 2rem 1rem 0 0;
+}
+
+.botonPrestamoBajo {
+  margin: 1rem 0 1rem 20%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+.botonPrestamoMedio {
+  margin: 1rem 0 1rem 20%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+.botonPrestamoAlto {
+  margin: 1rem 0 1rem 20%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+#transferencia {
+  display: none;
+  z-index: -1;
+  grid-area: datos;
+  margin: 2rem 1rem 0 0;
+}
+
+.transferencia-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin: 1rem 0 0rem 20%;
+}
+
+.transferencia-form-cuenta {
+  height: 35px;
+  margin: 1rem 0 1rem 20%;
+}
+
+.transferencia-form-nombre {
+  height: 35px;
+  margin: 1rem 0 1rem 20%;
+}
+
+.transferencia-form-monto {
+  height: 35px;
+  margin: 1rem 0 1rem 20%;
+}
+
+.transferencia-form-button {
+  margin: 1rem 0 1rem 20%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+.transferencia-form-comprobante {
+  margin: 1rem 0 1rem 20%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+#divisa {
+  display: none;
+  z-index: -1;
+}
+.divisa-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+.divisa-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: solid 1px blue;
+  border-bottom: solid 1px blue;
+}
+
+.dolar-compra {
+  margin: 1rem 5rem 0 5rem;
+}
+.dolar-venta {
+  margin: 1rem 5rem 0 5rem;
+}
+
+.titulo-compra-venta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin: 1rem 0 1rem 0;
+}
+
+.boton-calcular-venta,
+.boton-calcular-compra {
+  margin: 1rem 0 1rem 0;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+.boton-modal-dolar {
+  margin: 1rem 2rem 1rem 0;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #4433ff;
+}
+
+.cuenta-dolar-flex {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 3rem 0 0 0;
+  width: 100%;
+}
+
+.movimientos-dolar {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.saldo-dolar {
+  flex: 1;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cotizacionCarousel {
+  background-color: rgb(35, 5, 119);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}

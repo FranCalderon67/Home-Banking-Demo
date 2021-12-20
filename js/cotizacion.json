@@ -1,0 +1,22 @@
+[
+  {
+    "id": "EUR",
+    "nombre": "euro",
+    "compra": 221,
+    "venta": 240
+  },
+
+  {
+    "id": "CLP",
+    "nombre": "chileno",
+    "compra": 0.22,
+    "venta": 0.236
+  },
+
+  {
+    "id": "RL",
+    "nombre": "real",
+    "compra": 28,
+    "venta": 53
+  }
+]
