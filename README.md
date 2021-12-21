@@ -37,3 +37,10 @@ Para esto debes abrir una nueva terminal en VSCode y tipear:
 npm install -g live-server
 ```
 Una vez que la instalación haya finalizado, en la misma terminal tipea live-server.
+
+### Contacto.
+Si quieres ponerte en contacto conmigo puedes encotrarme en LinkedIn.
+*[Francisco Calderon](https://www.linkedin.com/in/francalders67/)
+
+
+
