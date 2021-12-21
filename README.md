@@ -15,12 +15,12 @@ de las transferencias que realices.
 
 ### Realizar test.
 Para realizar el test cree tres usuarios de tipo objeto. Los datos son:
-Usuario 1: fc
-Contraseña: 1111
-Usuario 2: ps
-Contraseña: 2222
-Usuario 3: em
-Contraseña: 3333
+* Usuario 1: fc
+* Contraseña: 1111
+* Usuario 2: ps
+* Contraseña: 2222
+* Usuario 3: em
+* Contraseña: 3333
 
 ### Pre-requisitos.
 
