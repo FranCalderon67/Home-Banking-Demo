@@ -17,7 +17,7 @@ Contraseña: 3333
 Tambíen inclui un archivo.json para traer información estatica, por lo que es necesario instalar live-server.
 El IDE que utilice es VSCode. Lo puedes instalar desde aqui:
 
-*[VSCode] (https://code.visualstudio.com/)
+* [VSCode](https://code.visualstudio.com/)
 
 Recuerda seleccionar el instalador para tu sistema operativo.
 Luego de que hayas instalado VSCode, tienes que realizar la instalación de live-server via npm:
