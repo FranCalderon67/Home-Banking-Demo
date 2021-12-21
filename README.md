@@ -40,7 +40,7 @@ Una vez que la instalación haya finalizado, en la misma terminal tipea live-ser
 
 ### Contacto.
 Si quieres ponerte en contacto conmigo puedes encotrarme en LinkedIn.
-*[Francisco Calderon](https://www.linkedin.com/in/francalders67/)
+* [Francisco Calderon](https://www.linkedin.com/in/francalders67/)
 
 
 
