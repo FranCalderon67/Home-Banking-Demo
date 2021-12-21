@@ -1,7 +1,7 @@
 # Francis Bank.
 
 Proyecto final del curso de JavaScript de Coder House comisión 19965.
-En este proyecto hice un bot de un home banking en el que podemos hacer transferencias, solictar prestamos y comprar y vender dolares.
+En este proyecto hice un bot de un home banking en el que podemos hacer transferencias, solicitar prestamos y comprar y vender dolares.
 Consumi una API para obtener el valor del dolar a traves del metodo $.get y tambien vas a poder generar un archivo PDF como comprobante
 de las transferencias que realices.
 
