@@ -20,70 +20,76 @@ $.get(URLdolar, function (data, status) {
 });
 
 //Funciones para actualizar la UI
-let compraUsuario;
+
+const compraUsuario = document.getElementById("comprar-dolar");
+
 //Funcion de evento del boton calcular dentro del modal
 //de compra dolar. Muestra el total de pesos para cambiar
 btnCalcularDolarCompra.click(function (e) {
   e.preventDefault();
 
-  compraUsuario = $("#comprar-dolar")
-    .keyup(function () {
-      let value = $(this).val();
-      $(".total-operacion-compra").text("Total" + " " + "$" + value * valorVenta);
-    })
-    .keyup();
+  let value = Number(compraUsuario.value);
+
+  let compra = value * valorVenta;
+
+  $(".total-operacion-compra").text(`Total $${compra}`);
 });
 //Boton de aceptar la compra.
 btnAceptarCompra.addEventListener("click", function (e) {
   e.preventDefault();
+  const sum = (valorPrevio, valorActual) => valorPrevio + valorActual;
+  const saldo = cuentaActual.movimientos.reduce(sum);
 
-  compraUsuario = $("#comprar-dolar")
-    .keyup(function () {
-      let value = $(this).val();
-      $(".total-operacion-compra").text("Total" + " " + "$" + value * valorVenta);
-    })
-    .keyup();
+  let valueCompra = Number(compraUsuario.value);
 
-  cuentaActual.cuentaExt.push(Number(compraUsuario.val()));
-  cuentaActual.movimientos.push(Number(compraUsuario.val() * valorVenta * -1));
-  //Funciones para actualizar la UI
-  agregarFinal();
-  actualizarSaldo();
-  agregarFinalDolar();
-  actualizarSaldoDolar();
+  let compra = valueCompra * valorVenta;
+
+  if (compra <= saldo) {
+    cuentaActual.cuentaExt.push(valueCompra);
+    cuentaActual.movimientos.push(compra * -1);
+
+    agregarFinal();
+    actualizarSaldo();
+    agregarFinalDolar();
+    actualizarSaldoDolar();
+  } else {
+    swal("Oops", "Saldo insufuciente", "error");
+  }
 });
 
-let ventaUsuario;
+const ventaUsuario = document.getElementById("vender-dolar");
 //Funcion de evento del boton calcular dentro del modal
 //de venta dolar. Muestra el total de dolares para cambiar
 btnCalcularDolarVenta.click(function (e) {
   e.preventDefault();
 
-  ventaUsuario = $("#vender-dolar")
-    .keyup(function () {
-      let value = $(this).val();
-      $(".total-operacion-venta").text("Total" + " " + "$" + value * valorCompra);
-    })
-    .keyup();
+  let valueVenta = Number(ventaUsuario.value);
+
+  let venta = valueVenta * valorCompra;
+
+  $(".total-operacion-venta").text(`Total $${venta}`);
 });
 //Boton de aceptar la venta.
 btnAceptarVenta.click(function (e) {
   e.preventDefault();
+  const sum = (valorPrevio, valorActual) => valorPrevio + valorActual;
+  const saldoDolar = cuentaActual.cuentaExt.reduce(sum);
 
-  ventaUsuario = $("#vender-dolar")
-    .keyup(function () {
-      let value = $(this).val();
-      $(".total-operacion-venta").text("Total" + " " + "$" + value * valorCompra);
-    })
-    .keyup();
+  let valueVenta = Number(ventaUsuario.value);
 
-  cuentaActual.cuentaExt.push(Number(ventaUsuario.val() * -1));
-  cuentaActual.movimientos.push(Number(ventaUsuario.val() * valorCompra));
-  //Funciones para actualizar la UI
-  agregarFinal();
-  actualizarSaldo();
-  agregarFinalDolar();
-  actualizarSaldoDolar();
+  let venta = valueVenta * valorCompra;
+
+  if (valueVenta <= saldoDolar) {
+    cuentaActual.movimientos.push(venta);
+    cuentaActual.cuentaExt.push(valueVenta * -1);
+
+    agregarFinal();
+    actualizarSaldo();
+    agregarFinalDolar();
+    actualizarSaldoDolar();
+  } else {
+    swal("Oops", "Saldo insufuciente", "error");
+  }
 });
 
 //Consumo de cotizacion.json
