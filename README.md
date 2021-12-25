@@ -27,7 +27,7 @@ Para realizar el test cree tres usuarios de tipo objeto. Los datos son:
 
 ### Funcionalidad
 
-En el proyecto tenemos tres secciones:
+En el proyecto tenemos estas secciones/opciones:
 
 - Cuentas
 - Transferencias
