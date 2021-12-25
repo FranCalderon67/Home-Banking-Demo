@@ -49,23 +49,43 @@
     </section>
     <!--Menu Principal-->
     <section>
-        <nav id="menu">
+        <div id="menu">
             <!--En este div vamos a mostrar cotizacion.json-->
-
-
-
             <div class="cotizacionCarousel"></div>
-            <ul class="menu-lista">
-                <li> <button class="menu-lista-boton menu-lista-boton--cuentas"> Cuentas</button>
-                </li>
-                <li> <button class="menu-lista-boton menu-lista-boton--transferencias">
-                        Transferencias</button>
-                </li>
-                <li> <button class="menu-lista-boton menu-lista-boton--prestamos"> Prestamos</button>
-                </li>
-                <li> <button class="menu-lista-boton menu-lista-boton--cerrar"> Cerrar
-                        Sesión</button></li>
-            </ul>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active menu-lista-boton menu-lista-boton--cuentas"
+                                    aria-current="page" href="#">Cuentas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active menu-lista-boton menu-lista-boton--transferencias"
+                                    aria-current="page" href="#">Transferencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active menu-lista-boton menu-lista-boton--prestamos"
+                                    aria-current="page" href="#">Prestamos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active menu-lista-boton menu-lista-boton--cerrar" aria-current="page"
+                                    href="#">Cerrar Sesión</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
 
         </nav>
 
